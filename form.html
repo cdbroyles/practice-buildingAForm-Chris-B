@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,22 +9,41 @@
     <form>
       <fieldset>
         <legend>Contact Information:</legend>
-        <label for="name">Name: </label><br />
-        <input id="name" name="name" type="text" required /><br /><br />
+        <label for="name">Name: </label>
+        <br />
+        <input id="name" name="name" type="text" required />
+        <br />
+        <br />
+        <label for="email">Email: </label>
+        <br />
 
-        <label for="email">Email: </label><br />
-        <input id="email" name="email" type="email" required /><br /><br />
+        <input id="email" name="email" type="email" required />
 
-        <label for="password">Password: </label><br />
-        <input id="password" name="password" type="password" required /><br /><br />
+        <br />
+        <br />
+        <label for="password">Password: </label>
 
-        <label for="preferred-contact">Preferred Contact: </label><br />
+        <br />
+        <input
+          id="password"
+          name="password"
+          type="password"
+          required
+          minlength="16"
+        />
+
+        <br />
+        <br />
+        <label for="preferred-contact">Preferred Contact: </label>
+
+        <br />
         <input id="email" name="preferred-contact" type="radio" checked />
+
         <label for="preferred-contact">Email</label>
+
         <input id="phone" name="preferred-contact" type="radio" />
         <label for="preferred-contact">Phone</label>
       </fieldset>
-
       <fieldset>
         <legend>Feedback:</legend>
         <label for="feature-request">Feature Request1: </label>
@@ -34,23 +52,28 @@
           name="feature-request"
           type="checkbox"
           required
-        /><br />
+        />
+        <br />
         <label for="feature-request">Feature Request1: </label>
         <input
           id="feature-request"
           name="feature-request"
           type="checkbox"
           required
-        /><br />
+        />
+        <br />
         <label for="feature-request">Feature Request2: </label>
         <input
           id="feature-request"
           name="feature-request"
           type="checkbox"
           required
-        /><br /><br />
+        />
 
-        <label for="feedback-category">Feedback Category: </label><br />
+        <br />
+        <br />
+        <label for="feedback-category">Feedback Category: </label>
+        <br />
         <select
           id="feedback-category"
           name="feedback-category"
@@ -60,17 +83,24 @@
           <option value="Category1">Category1</option>
           <option value="Category2">Category2</option>
           <option value="Category3">Category3</option>
-        </select><br /><br />
+        </select>
+        <br />
+        <br />
+        <label for="comment">Comment: </label>
+        <br />
 
-        <label for="comment">Comment: </label><br />
         <textarea
           id="comment"
           name="comment"
           placeholder="Please provide comments here."
           rows="4"
           cols="30"
-        ></textarea><br /><br />
+        ></textarea>
+
+        <br />
+        <br />
       </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
