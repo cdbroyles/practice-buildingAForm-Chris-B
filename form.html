@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 5 - Practice Building a Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Contact Information:</legend>
+        <label for="name">Name: </label><br />
+        <input id="name" name="name" type="text" required /><br /><br />
+
+        <label for="email">Email: </label><br />
+        <input id="email" name="email" type="email" required /><br /><br />
+
+        <label for="password">Password: </label><br />
+        <input id="password" name="password" type="password" required /><br /><br />
+
+        <label for="preferred-contact">Preferred Contact: </label><br />
+        <input id="email" name="preferred-contact" type="radio" checked />
+        <label for="preferred-contact">Email</label>
+        <input id="phone" name="preferred-contact" type="radio" />
+        <label for="preferred-contact">Phone</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback:</legend>
+        <label for="feature-request">Feature Request1: </label>
+        <input
+          id="feature-request"
+          name="feature-request"
+          type="checkbox"
+          required
+        /><br />
+        <label for="feature-request">Feature Request1: </label>
+        <input
+          id="feature-request"
+          name="feature-request"
+          type="checkbox"
+          required
+        /><br />
+        <label for="feature-request">Feature Request2: </label>
+        <input
+          id="feature-request"
+          name="feature-request"
+          type="checkbox"
+          required
+        /><br /><br />
+
+        <label for="feedback-category">Feedback Category: </label><br />
+        <select
+          id="feedback-category"
+          name="feedback-category"
+          type="checkbox"
+          required
+        >
+          <option value="Category1">Category1</option>
+          <option value="Category2">Category2</option>
+          <option value="Category3">Category3</option>
+        </select><br /><br />
+
+        <label for="comment">Comment: </label><br />
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Please provide comments here."
+          rows="4"
+          cols="30"
+        ></textarea><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
